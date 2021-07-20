@@ -9,12 +9,10 @@ func main() {
 
 	fmt.Println(angka64)
 	fmt.Println(angka32)
-
 	// overflow
 	fmt.Println(angka8)
 
 	name := "Andrew"
 	a := name[0]
 	fmt.Println(string(a))
-
 }
