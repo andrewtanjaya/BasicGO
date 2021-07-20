@@ -21,6 +21,12 @@ func getDataAgain() (name string, age int8){
 	age = 20
 	return
 }
+func getHello3(name string, getLastName func()string) string{
+	return "Hello "+ name +" age : " + string(getLastName())
+}
+func getLastname()string{
+	return "Tan"
+}
 func main() {
 	sayHello()
 	sayHelloToSomeone("Andrew")
@@ -28,4 +34,5 @@ func main() {
 	name, _ := getData()
 	a, b := getDataAgain()
 	fmt.Println(name, a , b)
+	fmt.Println(getHello3("andrew", getLastname))
 }
